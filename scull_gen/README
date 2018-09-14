@@ -1,0 +1,31 @@
+
+
+			scull - character device
+			
+		scull porting to 4.15.0-33-generic kernel.
+
+	Attempt to port scull driver and make it fully functional
+	on the new kernel distribution. Based on the 2005's book 
+	Linux Device Drivers by Corbet,Rubini and Hartman.Changes
+	introduced in scripts and on deprecated functions as well
+	in the context of improving functionality. 
+				
+	Documentation for the 'scull' driver.
+	
+	@Re-written by Mouzakitis Nikolaos 2018.
+
+
+---------------------------------------------------------------------------------
+|--------------------------------------------------------------------------------
+|										|
+| scull.c	:		module's code.					|
+|--------------------------------------------------------------------------------
+|										|
+| scull_load.sh : 	load the module into the Kernel and create		|
+|			the appropriate files in the /dev.			|
+|--------------------------------------------------------------------------------
+|										|
+| scull_unload.sh:	unloads module from kernel as well as deleting		|
+|			entries of device in /dev.				|
+|--------------------------------------------------------------------------------
+|--------------------------------------------------------------------------------
